@@ -1,0 +1,10 @@
+print("Now we will calculate an area of the triangle.", "\n")
+print("""Please enter side lenghts. 
+Lengths must be positive integer numbers.
+After entering each length press Enter:""", "\n")
+a=int(input())
+b=int(input())
+c=int(input())
+p=(a+b+c)*0.5
+s=(p*(p-a)*(p-b)*(p-c))**0.5
+print(s)
