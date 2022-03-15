@@ -1,0 +1,36 @@
+a=float(input("Please enter first number, then press Enter: " ))
+c=str(input("""Please enter the operation 
+(+, -, *, /, pow, div, mod), then press Enter. Note that
+you cannot divide at 0! """))
+b=float(input("Please enter second number, then press Enter: "))
+if (c=="+"):
+ print("Answer:", a+b)
+else:
+ if (c=="-"):
+  print("Answer:", a-b)
+ else:
+  if (c=="*"):
+   print("Answer:", a*b)
+  else:
+    if (c=="pow"):
+     print("Answer:", a**b)
+    else:
+     if ((c=="div") and b!=0.0):
+      print("Answer:", a//b)
+     else:
+      if ((c=="div") and b==0.0):
+       print("Division at 0!")
+      else:
+       if ((c=="mod") and b!=0.0):
+        print("Answer:", a%b)
+       else:
+        if ((c=="mod") and b==0.0):
+         print("Division at 0!")
+        else:
+         if ((c=="/") and b!=0.0):
+          print("Answer:", a/b)
+         else:
+          if ((c=="/") and b==0.0):
+           print("Division at 0!")
+          else:
+           print("Incorrect operation!")
