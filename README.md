@@ -1,3 +1,3 @@
 # python_elementary
-Elementary Python
+Elementary Python.
 First steps in Python programming.
