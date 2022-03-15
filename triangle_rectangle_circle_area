@@ -1,0 +1,21 @@
+print("""Area calculation. 
+Please enter the type of thegeometric figure (triangle, rectangle, circle), then press Enter: """)
+t=str(input())
+if (t=="triangle"):
+ a=float(input("Please enter the first side length, then press Enter: "))
+ b=float(input("Please enter the second side length, then press Enter: "))
+ c=float(input("Please enter the third side length, then press Enter: "))
+ p=(a+b+c)*0.5
+ s=(p*(p-a)*(p-b)*(p-c))**0.5
+ print(s)
+else:
+ if (t=="rectangle"):
+  a=float(input("Please enter the first side length, then press Enter: "))
+  b=float(input("Please enter the second side length, then press Enter: "))
+  print(a*b)
+ else:
+  if (t=="circle"):
+   r=float(input("Please enter the radius, then press Enter: "))
+   print(3.14*(r**2))
+  else:
+   print("Incorrect input!")
