@@ -1,0 +1,13 @@
+print('Please enter the numbers with spaces between them, then press Enter')
+s=(input().split())
+for i in range(len(s)):
+ s[i] = int(s[i])
+l=len(s)
+i=0
+a=0
+b=0
+while i<l:
+ b=int(s[i])
+ a+=b
+ i+=1
+print(a)
